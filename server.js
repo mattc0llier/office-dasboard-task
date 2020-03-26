@@ -64,7 +64,19 @@ const storage = {
 ]}
 
 
-// priority route
+// get all KPIs initial state
+function getKpis(){
+  return storage.kpis;
+}
+
+// all kpis get endpoint
+app.get('/api/kpis', function(req, res){
+  const kpis = getKpis();
+  res.json(kpis);
+});
+
+
+// index route
 app.get('/', function(req, res){
   res.render('index');
 });
