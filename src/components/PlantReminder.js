@@ -2,6 +2,7 @@ import React from 'react';
 
 const PlantReminder = ({kpi}) => {
 
+    // Find time between todays date and next watering date
     const today = new Date().getTime();
     const wateringDate = new Date(kpi.data.nextWaterDate).getTime()
     const timeUntilWater = Math.abs(wateringDate - today)

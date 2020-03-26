@@ -63,6 +63,17 @@ const storage = {
   }
 ]}
 
+// create random number for concurrent users on server start
+const concurrentUsers = () => {
+  setInterval(function(){   
+    const users = Math.floor((Math.random()*1500)+1000)
+    console.log('concurrent mock', users);
+    
+  }, 2000); 
+}
+//run concurrent users mock on starting server
+concurrentUsers();
+
 
 // get all KPIs initial state
 function getKpis(){
