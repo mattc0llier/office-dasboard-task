@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "hbs": "^4.1.0",
     "nodemon": "^2.0.2",
+    "normalize.scss": "^0.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

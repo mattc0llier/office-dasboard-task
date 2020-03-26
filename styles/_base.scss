@@ -1,0 +1,22 @@
+@import 'normalize.scss';
+
+@import '_colors.scss';
+@import '_typography.scss';
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: $body-font;
+    color: $kpi-title;
+    height: 100%;
+  }

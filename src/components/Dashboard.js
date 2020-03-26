@@ -1,13 +1,16 @@
 import React from 'react';
 import Card from './Card';
+import '../../styles/components/dashboard.scss';
 
-const Dashboard = () => {
+const Dashboard = ({allKpis}) => {
     return(
-        <div className="dashboard">
-            <h3>Dashboard</h3>
-            <Card />
+        <div className='dashboard'>
+            <div className='dashboard-container'>
+                {allKpis.map(kpi => (
+                    <Card key={`kpi-${kpi.id}`} kpi={kpi}/>
+                ))}
+            </div>
         </div>
-        
     )
 }
 

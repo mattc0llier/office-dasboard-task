@@ -1,0 +1,31 @@
+@import '../base.scss';
+
+.card {
+    width: 100%;
+    padding: 1rem 0.8rem;
+}
+
+.card-container {
+    background-color: $card-background;
+    padding: 0.5rem 1rem;
+    min-width: 150px;
+    min-height: 100px;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+
+.kpi-text {
+    color: $kpi-text;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.units-text {
+    color: $kpi-title;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}

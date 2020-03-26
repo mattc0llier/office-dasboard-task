@@ -1,11 +1,12 @@
 import React from 'react';
-import Dashboard from './Dashboard';
-import Nav from './Nav';
-import Footer from './Footer';
+import Nav from './Nav'
+import Dashboard from './Dashboard'
+import Footer from './Footer'
+import '../../styles/components/app.scss';
 
 class App extends React.Component {
     constructor(){
-        super()
+        super();
 
         this.state = { allKpis: [] }
         this.fetchKpiData = this.fetchKpiData.bind(this)
@@ -19,7 +20,7 @@ class App extends React.Component {
         .then(body => {
             console.log('body', body)
             this.setState({
-                allKPIS: body
+                allKpis: body
             })
     
         })
@@ -34,12 +35,11 @@ class App extends React.Component {
         return(
             <div className="app">
                 <Nav />
-                <Dashboard />
+                <Dashboard allKpis={this.state.allKpis} />
                 <Footer />
             </div>
-            
         )
     }
 }
 
-export default App
+export default App;

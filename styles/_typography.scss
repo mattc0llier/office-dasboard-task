@@ -1,0 +1,9 @@
+$body-font: 'Open Sans', sans-serif;
+$title-font: 'Palanquin', sans-serif;
+
+h1,h2,h3,h4,h5,h6{
+  color: $kpi-title;
+  font-family: $title-font;
+  letter-spacing: 0.03rem;
+  margin: 0;
+}
