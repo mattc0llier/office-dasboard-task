@@ -12,7 +12,7 @@ Create a `.env` file with the following variables
 ```
 PUSHER_SECRET=
 ```
-Run `npm start` to launch the app and navigate to localhost:8080
+Run `npm start` and `npm run dev` to launch the app and navigate to localhost:8080
 
 API Keys needed:
 
