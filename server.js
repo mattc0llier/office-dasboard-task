@@ -80,7 +80,6 @@ const storage = {
 const concurrentUsers = () => {
   setInterval(function(){   
     //send live concurrent users to client
-    console.log('event')
     pusher.trigger('dashboard-client', 'live-concurrent-users', {
       "totalUsers": Math.floor((Math.random()*1500)+1000)
     });
