@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches the footer snapshot 1`] = `
+<p>
+  GoSquared Office Dashboard
+</p>
+`;
