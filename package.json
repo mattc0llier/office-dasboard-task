@@ -1,0 +1,19 @@
+{
+  "name": "office-dashboard-task",
+  "version": "1.0.0",
+  "description": "A mock office dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattc0llier/office-dashboard-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattc0llier/office-dashboard-task/issues"
+  },
+  "homepage": "https://github.com/mattc0llier/office-dashboard-task#readme"
+}
