@@ -1,6 +1,8 @@
 # Office Dashboard Task
 A mock office dashboard interview task
 
+Time ~2hr 30mins
+
 ### Installation and set up
 Clone the project and run `npm install`
 
