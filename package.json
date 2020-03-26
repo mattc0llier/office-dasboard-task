@@ -57,7 +57,8 @@
       "@babel/preset-react",
       "@babel/preset-env"
     ]
-  }, "engines": {
-    "node": "12.6.1"
+  }, 
+  "engines": {
+    "node": "v12.6.0"
   }
 }
