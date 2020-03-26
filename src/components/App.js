@@ -1,5 +1,6 @@
 import React from 'react';
 import Dashboard from './Dashboard'
+import Nav from './Nav';
 
 class App extends React.Component {
     constructor(){
@@ -31,6 +32,7 @@ class App extends React.Component {
     render(){
         return(
             <div className="app">
+                <Nav />
                 <Dashboard />
             </div>
             
