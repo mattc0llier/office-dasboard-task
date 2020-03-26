@@ -1,8 +1,11 @@
-import React from 'react';
+import React from 'react'
+import '../../styles/components/footer.scss';
 
 const Footer = () => {
     return(
-        <p>GoSquared Office Dashboard</p>
+        <footer>
+            <p>GoSquared office dashboard</p>
+        </footer>
     )
 }
 
