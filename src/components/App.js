@@ -1,6 +1,7 @@
 import React from 'react';
-import Dashboard from './Dashboard'
+import Dashboard from './Dashboard';
 import Nav from './Nav';
+import Footer from './Footer';
 
 class App extends React.Component {
     constructor(){
@@ -34,6 +35,7 @@ class App extends React.Component {
             <div className="app">
                 <Nav />
                 <Dashboard />
+                <Footer />
             </div>
             
         )
