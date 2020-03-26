@@ -1,10 +1,23 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const Pusher = require('pusher');
+
 
 app.use(bodyParser.json());
 app.use('/static', express.static('static'));
 app.set('view engine', 'hbs');
+
+//Pusher config
+const pusher = new Pusher({
+  appId: '970042',
+  key: '0b3f37fdbb6b9a9a4177',
+  secret: process.env.PUSHER_SECRET,
+  cluster: 'eu',
+  encrypted: true
+}); 
 
 // mock data
 const storage = {
@@ -66,9 +79,11 @@ const storage = {
 // create random number for concurrent users on server start
 const concurrentUsers = () => {
   setInterval(function(){   
-    const users = Math.floor((Math.random()*1500)+1000)
-    console.log('concurrent mock', users);
-    
+    //send live concurrent users to client
+    console.log('event')
+    pusher.trigger('dashboard-client', 'live-concurrent-users', {
+      "totalUsers": Math.floor((Math.random()*1500)+1000)
+    });
   }, 2000); 
 }
 //run concurrent users mock on starting server
