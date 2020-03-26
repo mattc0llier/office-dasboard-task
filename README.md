@@ -1,3 +1,5 @@
+![Screenshot](https://stuck-public.s3-us-west-2.amazonaws.com/Interview+Tasks/Screen+Shot+2020-03-26+at+12.37.07.png)
+
 # Office Dashboard Task
 A mock office dashboard interview task
 
