@@ -1,8 +1,8 @@
 import React from 'react';
 
-const DrinksLeft = () => {
+const DrinksLeft = ({kpi}) => {
     return(
-        <p>DrinksLeft</p>
+        <p className="kpi-text">{kpi.data.drinksRemaining}</p>
     )
 }
 

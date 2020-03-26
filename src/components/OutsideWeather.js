@@ -1,8 +1,8 @@
 import React from 'react';
 
-const OutsideWeather = () => {
+const OutsideWeather = ({kpi}) => {
     return(
-        <p>OutsideWeather</p>
+        <p className="kpi-text">{kpi.data.temperature}</p>
     )
 }
 

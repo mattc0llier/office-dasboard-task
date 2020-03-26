@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PlantReminder = () => {
+const PlantReminder = ({kpi}) => {
     return(
-        <p>PlantReminder</p>
+        <p className="kpi-text">{kpi.data.nextWaterDate}</p>
     )
 }
 
